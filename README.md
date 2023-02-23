@@ -46,12 +46,12 @@ Edit the configuration on the top of `captive_portal.py`.
 
 First change the IP address of the server you are running the captive portal.
 ```
-LOCAL_SERVER_IP = "192.168.20.1"
+LOCAL_SERVER_IP = "192.168.100.1"
 ```
 
 Set the domain to use for HTTPS (you will neet to have access to the SSL certificate and key of the domain)
 ```
-REMOTE_SERVER_DOMAIN = "captive.ddns.net"
+REMOTE_SERVER_DOMAIN = "192.168.100.1:8000"
 ```
 You will also need to copy the SSL certificate (as `cert.pem`) and the private key (as `key.pem`) of the domain at the same directory.
 For testing, you may create custom ones by running (add the domain when asked for `Common Name (e.g. server FQDN or YOUR name)`):
